@@ -140,8 +140,8 @@ const ConvertToComponent = ({ texString = '', fontSize = 12, fontCache = false, 
 
     const tex = new TeX({
         packages: packageList,
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\(', '\\)']],
         processEscapes: true
     });
 

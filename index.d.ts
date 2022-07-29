@@ -1,12 +1,13 @@
 declare module 'react-native-mathjax-html-to-svg' {
+    import React from 'react';
     import {StyleProp, ViewStyle} from 'react-native';
 
-    type Props = {
+    export interface Props {
         fontSize?: number
         color?: string
         fontCache?: boolean
         style?: StyleProp<ViewStyle>
-    };
+    }
 
-    export function MathJaxSvg(props: Props) ;
+    export default class MathJaxSvg extends React.Component<Props> {}
 }
